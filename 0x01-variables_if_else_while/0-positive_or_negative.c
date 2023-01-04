@@ -9,13 +9,10 @@
  **/
 int main(void)
 {       int n;
-  // Initialize random seed
   srand(time(0));
 
-  // Generate a random number and store it in n
   n = rand() - RAND_MAX / 2;
 
-  // Print the number and whether it is positive, negative, or zero
   if (n > 0)
   {   
     printf("%d is positive\n", n);
