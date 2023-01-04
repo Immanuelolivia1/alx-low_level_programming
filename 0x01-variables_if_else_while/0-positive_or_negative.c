@@ -8,26 +8,25 @@
  *    * Return: Always 0 (Success)
  **/
 int main(void)
-{
+{       int n;
   // Initialize random seed
-  srand(time(NULL));
-  
+  srand(time(0));
+
   // Generate a random number and store it in n
-  int n = rand() - RAND_MAX / 2;
+  n = rand() - RAND_MAX / 2;
 
   // Print the number and whether it is positive, negative, or zero
-  printf("The number is %d and it is ", n);
   if (n > 0)
   {   
-    printf("positive.\n");
+    printf("%d is positive\n", n);
   }
   else if (n == 0)
   {
-    printf("zero.\n");
+    printf("%d is negative\n", n);
   }
   else
   {
-    printf("negative.\n");
+    printf("%d is zero\n", n);
   }
 
  return (0);
